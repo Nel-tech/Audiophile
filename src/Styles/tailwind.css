@@ -1,0 +1,31 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
+@layer base {
+  html {
+    font-family: "Overpass", sans-serif;
+  }
+}
+.container {
+  @apply max-w-containerWidth mx-auto;
+}
+.link-text {
+  @apply text-center ml-5 text-sm font-bold text-TextColor mt-1;
+}
+.products1 h1 {
+  @apply text-base;
+}
+.arrow-img {
+  @apply w-3 h-3;
+}
+.more {
+  @apply pt-28 pr-1;
+}
+.speaker-more {
+  @apply mt-24 ml-16;
+}
+.btn-second {
+  @apply pt-2;
+}
