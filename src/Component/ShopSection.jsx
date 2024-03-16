@@ -15,7 +15,7 @@ function Section() {
 
               <h1>HEADPHONE</h1>
               <Magnetic>
-                <Link to="/">
+                <Link to="/headphones">
                   <p className="link-text">SHOP </p>
                 </Link>
               </Magnetic>
@@ -30,7 +30,7 @@ function Section() {
 
               <h1>SPEAKERS</h1>
               <Magnetic>
-                <Link to="/">
+                <Link to="/speakers">
                   <p className="link-text">SHOP </p>
                 </Link>
               </Magnetic>
@@ -45,7 +45,7 @@ function Section() {
 
               <h1>EARPHONES</h1>
               <Magnetic>
-                <Link to="/">
+                <Link to="/earphones">
                   <p className="link-text">SHOP </p>
                 </Link>
               </Magnetic>

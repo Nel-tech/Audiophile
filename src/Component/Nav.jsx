@@ -24,21 +24,21 @@ function Nav() {
               <div>
                 <Magnetic>
                   <Link to="/headphones" className="link">
-                    HeadPones
+                    HeadPhones
                   </Link>
                 </Magnetic>
               </div>
 
               <div>
                 <Magnetic>
-                  <Link to="/speaker" className="link">
+                  <Link to="/speakers" className="link">
                     Speaker
                   </Link>
                 </Magnetic>
               </div>
               <div>
                 <Magnetic>
-                  <Link to="/EarPhones" className="link">
+                  <Link to="/earphones" className="link">
                     EarPhones
                   </Link>
                 </Magnetic>

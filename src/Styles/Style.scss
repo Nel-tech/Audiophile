@@ -201,7 +201,7 @@ main {
 .product-flex {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 4rem;
 }
 /* ends here */
 
@@ -228,7 +228,66 @@ main {
   letter-spacing: 0rem;
   padding-top: 0.9rem;
 }
-.pic-gear {
-  width: 490px;
+.TopFooter-pics {
+  width: 450px;
   border-radius: 3px;
+}
+footer {
+  margin-top: 7rem;
+  background-color: rgb(16, 16, 16);
+  padding: 60px 30px;
+  position: relative;
+}
+.footer-header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -2rem;
+}
+.footer-links {
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+  gap: 2rem;
+}
+.footer-links a {
+  color: white;
+  text-transform: uppercase;
+}
+.line {
+  width: 120px;
+  background-color: #d87d4a;
+  height: 5px;
+  position: absolute;
+  top: 0;
+  left: 2rem;
+}
+.para p {
+  color: white;
+  max-width: 500px;
+  font-size: 15px;
+  position: relative;
+}
+.para {
+  display: flex;
+  justify-content: left;
+}
+.footer-paragraph {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 0;
+}
+.footer-socials i {
+  font-size: 30px;
+  color: white;
+}
+.footer-socials {
+  display: flex;
+  justify-content: right;
+
+  gap: 2rem;
+}
+.copyright {
+  color: white;
+  display: flex;
 }
