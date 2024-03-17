@@ -7,17 +7,17 @@ import "../../Styles/tailwind.css";
 import "../../Styles/Style.scss";
 import "../../Styles/Product.scss";
 import Footer from "../../Component/Footer";
-function XX59HeadPhones() {
-  const headphoneIds = [2];
+function XX99Mark() {
+  const Ids = [3];
   return (
     <div>
       <div className="background">
         <Nav />
-        <h1>XX59 Headphones</h1>
+        <h1>XX99 Mark I Headphones</h1>
       </div>
 
       <div>
-        {Data.filter((item) => headphoneIds.includes(item.id)).map((val) => (
+        {Data.filter((item) => Ids.includes(item.id)).map((val) => (
           <section key={val.id}>
             <div className="container">
               <div className="flex-product">
@@ -176,4 +176,4 @@ function XX59HeadPhones() {
   );
 }
 
-export default XX59HeadPhones;
+export default XX99Mark;
