@@ -18,11 +18,11 @@ function Zx9() {
             <h1>YX1 EARPHONE</h1>
 
             <div className="btn-second">
-              <Link to="">
-                <Magnetic>
+              <Magnetic>
+                <Link to="/ProductPages/Earphones/yx1-earphones">
                   <button className="btn-random">SEE PRODUCT</button>
-                </Magnetic>
-              </Link>
+                </Link>
+              </Magnetic>
             </div>
           </div>
         </div>

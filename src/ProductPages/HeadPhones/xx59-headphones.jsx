@@ -2,18 +2,20 @@ import Nav from "../../Component/Nav";
 import Magnetic from "../../Component/Magnetic";
 import Data from "../../data.json";
 import { Link } from "react-router-dom";
-
 import "../../Styles/tailwind.css";
 import "../../Styles/Style.scss";
 import "../../Styles/Product.scss";
 import Footer from "../../Component/Footer";
-function XX59HeadPhones() {
+import IncandDec from "../../Component/IncandDec";
+
+function xx59HeadPhones() {
+  const { count, dec, inc} = IncandDec();
   const headphoneIds = [2];
   return (
     <div>
       <div className="background">
         <Nav />
-        <h1>XX59 Headphones</h1>
+        <h1>XX59 HEADPHONES</h1>
       </div>
 
       <div>
@@ -30,9 +32,13 @@ function XX59HeadPhones() {
 
                   <div className="flex-btn">
                     <div className="padd">
-                      <button className="minus">-</button>
-                      <p className="content">0</p>
-                      <button className="plus">+</button>
+                      <button className="minus" onClick={dec}>
+                        -
+                      </button>
+                      <p className="content">{count}</p>
+                      <button className="plus" onClick={inc}>
+                        +
+                      </button>
                     </div>
                     <div>
                       <Magnetic>
@@ -43,11 +49,7 @@ function XX59HeadPhones() {
                 </div>
 
                 <div>
-                  <img
-                    src={val.image.desktop}
-                    alt=""
-                    className="product-img"
-                  />
+                  <img src={val.image.desktop} alt="" className="product-img" />
                 </div>
               </div>
 
@@ -154,7 +156,7 @@ function XX59HeadPhones() {
 
                         <div className="recommend-btn">
                           <Magnetic>
-                            <Link to={`/${val.slug}`}>
+                            <Link to={`/others/xx59/${other.slug}`}>
                               <button className="like-btn ">See Product</button>
                             </Link>
                           </Magnetic>
@@ -175,5 +177,4 @@ function XX59HeadPhones() {
     </div>
   );
 }
-
-export default XX59HeadPhones;
+export default xx59HeadPhones;

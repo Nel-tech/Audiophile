@@ -22,7 +22,7 @@ function Section() {
 
                 <div className="btn-see">
                   <Magnetic>
-                    <Link to="/">
+                    <Link to="/ProductPages/Speaker/zx9-speaker">
                       <button className="btn">SEE PRODUCT</button>
                     </Link>
                   </Magnetic>

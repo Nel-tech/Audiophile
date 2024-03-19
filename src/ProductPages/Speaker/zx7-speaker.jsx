@@ -7,13 +7,13 @@ import "../../Styles/tailwind.css";
 import "../../Styles/Style.scss";
 import "../../Styles/Product.scss";
 import Footer from "../../Component/Footer";
-function XX99Mark() {
-  const Ids = [3];
+function  zx7Speaker() {
+  const Ids = [5];
   return (
     <div>
       <div className="background">
         <Nav />
-        <h1>XX99 Mark I Headphones</h1>
+        <h1>ZX7 SPEAKER</h1>
       </div>
 
       <div>
@@ -43,7 +43,11 @@ function XX99Mark() {
                 </div>
 
                 <div>
-                  <img src={val.image.desktop} alt="" className="product-img" />
+                  <img
+                    src={val.image.desktop}
+                    alt=""
+                    className="product-img"
+                  />
                 </div>
               </div>
 
@@ -150,7 +154,7 @@ function XX99Mark() {
 
                         <div className="recommend-btn">
                           <Magnetic>
-                            <Link to={`/${other.slug}`}>
+                            <Link to={`/others/zx7/${other.slug}`}>
                               <button className="like-btn ">See Product</button>
                             </Link>
                           </Magnetic>
@@ -172,4 +176,4 @@ function XX99Mark() {
   );
 }
 
-export default XX99Mark;
+export default  zx7Speaker;

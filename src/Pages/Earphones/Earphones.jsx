@@ -1,7 +1,7 @@
 import Data from "../../data.json";
 
 import Nav from "../../Component/Nav";
-
+import { Link } from "react-router-dom";
 import "../../Styles/Product.scss";
 import ShopSection from "../../Component/ShopSection";
 import TopFooter from "../../Component/TopFooter";
@@ -38,7 +38,11 @@ function Earphones() {
                   <p>{val.description}</p>
 
                   <Magnetic>
-                    <button className="check-product mt-2">See Product</button>
+                    <Link to={`/ProductPages/Earphones/${val.slug}`}>
+                      <button className="check-product mt-2">
+                        See Product
+                      </button>
+                    </Link>
                   </Magnetic>
                 </div>
               </div>

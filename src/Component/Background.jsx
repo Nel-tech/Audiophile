@@ -1,5 +1,6 @@
 import Nav from "../Component/Nav";
 import Magnetic from "./Magnetic";
+import { Link } from "react-router-dom";
 function Background() {
   return (
     <div className="home-background">
@@ -16,7 +17,9 @@ function Background() {
         </p>
 
         <Magnetic>
-          <button className="button mt-2">See Product</button>
+          <Link to="/ProductPages/HeadPhones/xx99-mark-two-headphones.jsx">
+            <button className="button mt-2">See Product</button>
+          </Link>
         </Magnetic>
       </div>
     </div>

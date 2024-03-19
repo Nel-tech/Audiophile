@@ -12,7 +12,9 @@ function Zx7() {
               <div className="btn-second">
                 <Link to="/">
                   <Magnetic>
-                    <button className="btn-random">SEE PRODUCT</button>
+                    <Link to="/ProductPages/Speaker/zx7-speaker">
+                      <button className="btn-random">SEE PRODUCT</button>
+                    </Link>
                   </Magnetic>
                 </Link>
               </div>

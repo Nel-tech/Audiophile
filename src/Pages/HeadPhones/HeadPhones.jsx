@@ -8,7 +8,7 @@ import Footer from "../../Component/Footer";
 import Magnetic from "../../Component/Magnetic";
 
 function HeadPhones() {
-  const headphoneIds = [3,2, 4];
+  const headphoneIds = [2,3, 4];
 
   return (
     <div>

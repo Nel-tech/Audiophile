@@ -2,22 +2,23 @@ import Nav from "../../Component/Nav";
 import Magnetic from "../../Component/Magnetic";
 import Data from "../../data.json";
 import { Link } from "react-router-dom";
-
 import "../../Styles/tailwind.css";
 import "../../Styles/Style.scss";
 import "../../Styles/Product.scss";
 import Footer from "../../Component/Footer";
-function XX99Mark() {
-  const Ids = [3];
+
+
+function xx59HeadPhones() {
+  const headphoneIds = [2];
   return (
     <div>
       <div className="background">
         <Nav />
-        <h1>XX99 Mark I Headphones</h1>
+        <h1>XX59 HEADPHONES</h1>
       </div>
 
       <div>
-        {Data.filter((item) => Ids.includes(item.id)).map((val) => (
+        {Data.filter((item) => headphoneIds.includes(item.id)).map((val) => (
           <section key={val.id}>
             <div className="container">
               <div className="flex-product">
@@ -43,7 +44,11 @@ function XX99Mark() {
                 </div>
 
                 <div>
-                  <img src={val.image.desktop} alt="" className="product-img" />
+                  <img
+                    src={val.image.desktop}
+                    alt=""
+                    className="product-img"
+                  />
                 </div>
               </div>
 
@@ -150,7 +155,7 @@ function XX99Mark() {
 
                         <div className="recommend-btn">
                           <Magnetic>
-                            <Link to={`/${other.slug}`}>
+                            <Link to={`/others/xx59/${other.slug}`}>
                               <button className="like-btn ">See Product</button>
                             </Link>
                           </Magnetic>
@@ -171,5 +176,4 @@ function XX99Mark() {
     </div>
   );
 }
-
-export default XX99Mark;
+export default xx59HeadPhones;

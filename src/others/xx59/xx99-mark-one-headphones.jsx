@@ -43,7 +43,11 @@ function XX99Mark() {
                 </div>
 
                 <div>
-                  <img src={val.image.desktop} alt="" className="product-img" />
+                  <img
+                    src={val.image.desktop}
+                    alt=""
+                    className="product-img"
+                  />
                 </div>
               </div>
 
@@ -150,7 +154,7 @@ function XX99Mark() {
 
                         <div className="recommend-btn">
                           <Magnetic>
-                            <Link to={`/${other.slug}`}>
+                            <Link to={`/others/xx99Mark1/${other.slug}`}>
                               <button className="like-btn ">See Product</button>
                             </Link>
                           </Magnetic>
