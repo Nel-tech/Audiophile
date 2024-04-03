@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import "./Styles/tailwind.css";
 import "./Styles/Style.scss";
+import { CartProvider } from "./Component/CartContext";
 // import OtherProduct1 from "./others/xx99MarkII/xx59-headphones";
 // import OtherProduct2 from "./others/xx99MarkII/xx99-mark-one-headphones";
 // import OtherProduct3 from "./others/xx99MarkII/zx9-speaker";
@@ -44,141 +45,148 @@ import RecommendZX9YX1 from "./others/yx1/zx9-speaker";
 const App = () => {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/headphones" element={<HeadPhones />} />
-        <Route path="/speakers" element={<Speakers />} />
-        <Route path="/earphones" element={<Earphones />} />
+      <CartProvider>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/headphones" element={<HeadPhones />} />
+          <Route path="/speakers" element={<Speakers />} />
+          <Route path="/earphones" element={<Earphones />} />
 
-        <Route
-          path="/ProductPages/HeadPhones/xx99-mark-two-headphones.jsx"
-          element={<LinkHeader />}
-        />
+          <Route
+            path="/ProductPages/HeadPhones/xx99-mark-two-headphones.jsx"
+            element={<LinkHeader />}
+          />
 
-        <Route
-          path="/ProductPages/Speaker/zx9-speaker"
-          element={<ZX9HOMESECTION />}
-        />
+          <Route
+            path="/ProductPages/Speaker/zx9-speaker"
+            element={<ZX9HOMESECTION />}
+          />
 
-        <Route
-          path="/ProductPages/Speaker/zx7-speaker"
-          element={<ZX7HOMESECTION />}
-        />
+          <Route
+            path="/ProductPages/Speaker/zx7-speaker"
+            element={<ZX7HOMESECTION />}
+          />
 
-        <Route
-          path="/ProductPages/Earphones/yx1-earphones"
-          element={<YX1HOMESECTION />}
-        />
+          <Route
+            path="/ProductPages/Earphones/yx1-earphones"
+            element={<YX1HOMESECTION />}
+          />
 
-        <Route
-          path="/ProductPages/HeadPhones/xx59-headphones"
-          element={<Xx59HeadPhones />}
-        />
+          <Route
+            path="/ProductPages/HeadPhones/xx59-headphones"
+            element={<Xx59HeadPhones />}
+          />
 
-        <Route
-          path="/ProductPages/HeadPhones/xx99-mark-one-headphones"
-          element={<XX99HeadPhones />}
-        />
+          <Route
+            path="/ProductPages/HeadPhones/xx99-mark-one-headphones"
+            element={<XX99HeadPhones />}
+          />
 
-        <Route
-          path="/ProductPages/HeadPhones/xx99-mark-two-headphones"
-          element={<XX99MarkTwo />}
-        />
+          <Route
+            path="/ProductPages/HeadPhones/xx99-mark-two-headphones"
+            element={<XX99MarkTwo />}
+          />
 
-        <Route
-          path="/ProductPages/Speaker/zx7-speaker"
-          element={<ZX7Speaker />}
-        />
+          <Route
+            path="/ProductPages/Speaker/zx7-speaker"
+            element={<ZX7Speaker />}
+          />
 
-        <Route
-          path="/ProductPages/Speaker/zx9-speaker"
-          element={<ZX9Speaker />}
-        />
+          <Route
+            path="/ProductPages/Speaker/zx9-speaker"
+            element={<ZX9Speaker />}
+          />
 
-        <Route path="/ProductPages/Earphones/yx1-earphones" element={<YX1 />} />
+          <Route
+            path="/ProductPages/Earphones/yx1-earphones"
+            element={<YX1 />}
+          />
 
-        <Route
-          path="/others/xx59/xx99-mark-one-headphones"
-          element={<RecommendXX9ONE />}
-        />
+          <Route
+            path="/others/xx59/xx99-mark-one-headphones"
+            element={<RecommendXX9ONE />}
+          />
 
-        <Route
-          path="/others/xx59/xx99-mark-two-headphones"
-          element={<RecommendXX9TWO />}
-        />
+          <Route
+            path="/others/xx59/xx99-mark-two-headphones"
+            element={<RecommendXX9TWO />}
+          />
 
-        <Route
-          path="/others/xx59/zx9-speaker"
-          element={<RecommendZX9SPEAKER />}
-        />
+          <Route
+            path="/others/xx59/zx9-speaker"
+            element={<RecommendZX9SPEAKER />}
+          />
 
-        <Route
-          path="/others/xx99Mark1/xx59-headphones"
-          element={<RecommendXX59 />}
-        />
+          <Route
+            path="/others/xx99Mark1/xx59-headphones"
+            element={<RecommendXX59 />}
+          />
 
-        <Route
-          path="/others/xx99Mark1/xx99-mark-two-headphones"
-          element={<RecommendXX9TWOMARK1 />}
-        />
+          <Route
+            path="/others/xx99Mark1/xx99-mark-two-headphones"
+            element={<RecommendXX9TWOMARK1 />}
+          />
 
-        <Route
-          path="/others/xx99Mark1/zx9-speaker"
-          element={<RecommendZX9SPEAKERMARK1 />}
-        />
+          <Route
+            path="/others/xx99Mark1/zx9-speaker"
+            element={<RecommendZX9SPEAKERMARK1 />}
+          />
 
-        <Route
-          path="/others/xx99MarkII/xx59-headphones"
-          element={<RecommendMARKIIXX59 />}
-        />
+          <Route
+            path="/others/xx99MarkII/xx59-headphones"
+            element={<RecommendMARKIIXX59 />}
+          />
 
-        <Route
-          path="/others/xx99MarkII/xx99-mark-one-headphones"
-          element={<RecommendXX9MARKII />}
-        />
+          <Route
+            path="/others/xx99MarkII/xx99-mark-one-headphones"
+            element={<RecommendXX9MARKII />}
+          />
 
-        <Route
-          path="/others/xx99MarkII/zx9-speaker"
-          element={<RecommendZX9SPEAKERMARKII />}
-        />
+          <Route
+            path="/others/xx99MarkII/zx9-speaker"
+            element={<RecommendZX9SPEAKERMARKII />}
+          />
 
-        <Route
-          path="/others/zx7/xx59-headphones"
-          element={<RecommendZX7XX59 />}
-        />
+          <Route
+            path="/others/zx7/xx59-headphones"
+            element={<RecommendZX7XX59 />}
+          />
 
-        <Route
-          path="/others/zx7/xx99-mark-one-headphones"
-          element={<RecommendZX7XX9MARKII />}
-        />
+          <Route
+            path="/others/zx7/xx99-mark-one-headphones"
+            element={<RecommendZX7XX9MARKII />}
+          />
 
-        <Route
-          path="/others/zx7/zx9-speaker"
-          element={<RecommendZX7SPEAKERMARKII />}
-        />
+          <Route
+            path="/others/zx7/zx9-speaker"
+            element={<RecommendZX7SPEAKERMARKII />}
+          />
 
-        <Route
-          path="/others/zx9/xx59-headphones"
-          element={<RecommendZX9MARK />}
-        />
+          <Route
+            path="/others/zx9/xx59-headphones"
+            element={<RecommendZX9MARK />}
+          />
 
-        <Route
-          path="/others/zx9/xx99-mark-one-headphones"
-          element={<RecommendZX9 />}
-        />
+          <Route
+            path="/others/zx9/xx99-mark-one-headphones"
+            element={<RecommendZX9 />}
+          />
 
-        <Route path="/others/zx9/zx7-speaker" element={<RecommendZX9ZX7 />} />
+          <Route path="/others/zx9/zx7-speaker" element={<RecommendZX9ZX7 />} />
 
-        <Route path="/others/yx1/xx59-headphones" element={<Recommendyx1 />} />
+          <Route
+            path="/others/yx1/xx59-headphones"
+            element={<Recommendyx1 />}
+          />
 
-        <Route
-          path="/others/yx1/xx99-mark-one-headphones"
-          element={<RecommendXX99 />}
-        />
+          <Route
+            path="/others/yx1/xx99-mark-one-headphones"
+            element={<RecommendXX99 />}
+          />
 
-        <Route path="/others/yx1/zx9-speaker" element={<RecommendZX9YX1 />} />
+          <Route path="/others/yx1/zx9-speaker" element={<RecommendZX9YX1 />} />
 
-        {/* <Route
+          {/* <Route
           path="/others/xx99MarkII/xx59-headphones"
           element={<OtherProduct1 />}
         />
@@ -189,7 +197,8 @@ const App = () => {
         />
 
         <Route path="/others/xx99MarkII/zx9-speaker.jsx" element={<OtherProduct3 />} /> */}
-      </Routes>
+        </Routes>
+      </CartProvider>
     </Router>
   );
 };

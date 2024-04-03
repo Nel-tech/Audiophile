@@ -1,3 +1,93 @@
+.icon-close {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+.popup-page {
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+  background-color: rgba(110, 108, 108, 0.434);
+  position: fixed;
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100000000;
+}
+.overall-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  padding: 0.1rem;
+  height: 40%;
+  border-radius: 6px;
+  background-color: white;
+}
+.notf-cart {
+  position: absolute;
+  top: 1.5rem;
+  right: 10rem;
+  background-color: #d87d4a;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1rem;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  cursor: pointer;
+
+  p {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.cart-heading {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 18rem;
+}
+.background-popup {
+  display: flex;
+  justify-content: space-evenly;
+
+  position: relative;
+  p {
+    font-size: 14px;
+  }
+  .flex-btn {
+    position: relative;
+    bottom: 1rem;
+    .padd {
+      button {
+        border: none;
+
+        font-size: 13px;
+        font-weight: bolder;
+        outline: none;
+        padding: 0.7rem;
+        cursor: pointer;
+      }
+      .content {
+        font-size: 14px;
+      }
+    }
+  }
+}
+.cart-img {
+  width: 60px;
+  border-radius: 5px;
+}
 .background {
   background-color: black;
   //   width: 100%;
@@ -10,6 +100,7 @@
     letter-spacing: 0.9rem;
   }
 }
+
 .headphones-product {
   padding-top: 2rem;
 }

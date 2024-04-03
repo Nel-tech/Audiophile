@@ -6,10 +6,9 @@ import "../../Styles/tailwind.css";
 import "../../Styles/Style.scss";
 import "../../Styles/Product.scss";
 import Footer from "../../Component/Footer";
-import IncandDec from "../../Component/IncandDec";
+import ActionBtn from "../../Component/ActionBtn";
 
 function xx59HeadPhones() {
-  const { count, dec, inc} = IncandDec();
   const headphoneIds = [2];
   return (
     <div>
@@ -30,22 +29,11 @@ function xx59HeadPhones() {
                   <p>{val.description}</p>
                   <h4>{val.price}</h4>
 
-                  <div className="flex-btn">
-                    <div className="padd">
-                      <button className="minus" onClick={dec}>
-                        -
-                      </button>
-                      <p className="content">{count}</p>
-                      <button className="plus" onClick={inc}>
-                        +
-                      </button>
-                    </div>
-                    <div>
-                      <Magnetic>
-                        <button className="cart-btn ">ADD TO CART</button>
-                      </Magnetic>
-                    </div>
-                  </div>
+                  <ActionBtn
+                    name={val.name}
+                    price={val.price}
+                    Image={val.image.desktop}
+                  />
                 </div>
 
                 <div>

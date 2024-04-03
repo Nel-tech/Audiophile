@@ -7,7 +7,8 @@ import "../../Styles/tailwind.css";
 import "../../Styles/Style.scss";
 import "../../Styles/Product.scss";
 import Footer from "../../Component/Footer";
-function  zx7Speaker() {
+import ActionBtn from "../../Component/ActionBtn";
+function zx7Speaker() {
   const Ids = [5];
   return (
     <div>
@@ -28,26 +29,15 @@ function  zx7Speaker() {
                   <p>{val.description}</p>
                   <h4>{val.price}</h4>
 
-                  <div className="flex-btn">
-                    <div className="padd">
-                      <button className="minus">-</button>
-                      <p className="content">0</p>
-                      <button className="plus">+</button>
-                    </div>
-                    <div>
-                      <Magnetic>
-                        <button className="cart-btn ">ADD TO CART</button>
-                      </Magnetic>
-                    </div>
-                  </div>
+                  <ActionBtn
+                    name={val.name}
+                    price={val.price}
+                    Image={val.image.desktop}
+                  />
                 </div>
 
                 <div>
-                  <img
-                    src={val.image.desktop}
-                    alt=""
-                    className="product-img"
-                  />
+                  <img src={val.image.desktop} alt="" className="product-img" />
                 </div>
               </div>
 
@@ -176,4 +166,4 @@ function  zx7Speaker() {
   );
 }
 
-export default  zx7Speaker;
+export default zx7Speaker;

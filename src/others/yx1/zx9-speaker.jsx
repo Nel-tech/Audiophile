@@ -7,6 +7,7 @@ import "../../Styles/tailwind.css";
 import "../../Styles/Style.scss";
 import "../../Styles/Product.scss";
 import Footer from "../../Component/Footer";
+import ActionBtn from "../../Component/ActionBtn";
 function zx9Speaker() {
   const Ids = [6];
   return (
@@ -28,18 +29,7 @@ function zx9Speaker() {
                   <p>{val.description}</p>
                   <h4>{val.price}</h4>
 
-                  <div className="flex-btn">
-                    <div className="padd">
-                      <button className="minus">-</button>
-                      <p className="content">0</p>
-                      <button className="plus">+</button>
-                    </div>
-                    <div>
-                      <Magnetic>
-                        <button className="cart-btn ">ADD TO CART</button>
-                      </Magnetic>
-                    </div>
-                  </div>
+                 <ActionBtn/>
                 </div>
 
                 <div>

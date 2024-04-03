@@ -1,9 +1,16 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import Magnetic from "./Magnetic";
 import "../Styles/tailwind.css";
 import "../Styles/Style.scss";
-
+import { useCart } from "./CartContext";
 function Nav() {
+  const { cartItems } = useCart();
+  const [isCartOpen, setIsCartOpen] = useState(false);
+
+  const toggleCart = () => {
+    setIsCartOpen(!isCartOpen);
+  };
   return (
     <div>
       <div className="navbar container ">
@@ -46,13 +53,35 @@ function Nav() {
               <img src="tablet/icon-close.svg" alt="" className="icon-close" />
             </div>
           </div>
-          <div className="cart">
-            {/* <div className="notf-cart">0</div> */}
+          <div className="cart" onClick={toggleCart}>
+            <div className="notf-cart">{cartItems.length}</div>
             <img
               src="/Assets/desktop/icon-cart.svg"
               alt=""
               className="img-cart"
             />
+          </div>
+
+          <div className="popup-page">
+            {isCartOpen && (
+              <div className="cart-dropdown  overall-popup">
+                {cartItems.length === 0 ? (
+                  <p>Cart is empty</p>
+                ) : (
+                  <ul>
+                    {cartItems.map((item, index) => (
+                      <li key={index}>
+                        <img src={item.image} alt={item.name} />
+                        <div>
+                          <p style={{ color: "white" }}>{item.name}</p>
+                          <p>{item.price}</p>
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            )}
           </div>
         </nav>
       </div>
